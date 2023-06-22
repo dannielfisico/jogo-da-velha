@@ -2,6 +2,7 @@
 const simbolos = ["X","O"]
 let jogadorAtual = 0
 const jogadasTabuleiro = ["","","","","","","","",""]
+let qtdJogadas = 0
 
 const celulas = document.querySelectorAll(".celula") //Selecionar todas as celulas do tabuleiro
 
@@ -10,8 +11,12 @@ celulas.forEach(celula => {
 })
 
 function fazerJogada(celula){
-    celula.target.innerHTML = simbolos[jogadorAtual]
+    celula.target.innerHTML = simbolos[jogadorAtual] //Colocar o simbolo do jogadorAtual dentro da celula
+    jogadasTabuleiro[celula.target.id] = simbolos[jogadorAtual] //Salvar a jogada colocando o simbolo do jogador no array
+    qtdJogadas++
     trocarJogador()
+    document.querySelector(".jogadorAtualTxt").innerHTML = `Aguardando a jogada de ${simbolos[jogadorAtual]}`
+    document.querySelector(".qtdJogadasTxt").innerHTML = `Quantidade de jogadas: ${qtdJogadas}`
 }
 
 function trocarJogador(){
