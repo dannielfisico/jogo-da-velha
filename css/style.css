@@ -3,3 +3,32 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+main {
+    width: 700px;
+    height: 500px;
+    background-color: black;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabuleiro{
+    background-color: aliceblue;
+    width: 450px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    gap: 8px;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.celula {
+    width: 120px;
+    height: 120px;
+    background-color: violet;
+}
