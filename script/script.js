@@ -41,13 +41,15 @@ function eCampeao(){
 
     for(let i = 0; i < combinacoes.length; i++){
         let sequencia = combinacoes[i]
-
+        
         let pos0 = sequencia[0]
         let pos1 = sequencia[1]
         let pos2 = sequencia[2]
 
         if(jogadasTabuleiro[pos0] == jogadasTabuleiro[pos1] && jogadasTabuleiro[pos0] == jogadasTabuleiro[pos2] && jogadasTabuleiro[pos0] != ""){
-            
+            document.getElementById(pos0).style.backgroundColor = 'yellow'
+            document.getElementById(pos1).style.backgroundColor = 'yellow'
+            document.getElementById(pos2).style.backgroundColor = 'yellow'
             document.querySelector(".vencedor").innerHTML = `${simbolos[jogadorAtual]} venceu!`
             document.querySelector(".resultado").style.display = 'flex'
             return true
