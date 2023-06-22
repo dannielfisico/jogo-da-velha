@@ -3,3 +3,78 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: rgb(170, 168, 165);
+    /* position: relative; */
+}
+
+main {
+    width: 700px;
+    height: 500px;
+    /* background-color: black; */
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabuleiro{
+    background-color: aliceblue;
+    width: 450px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    gap: 8px;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.celula {
+    width: 120px;
+    height: 120px;
+    background-color: rgb(78, 13, 78);
+}
+
+.info{
+    padding: 10px;
+    color: rgb(78, 13, 78);;
+    text-align: center;
+
+}
+
+.resultado{
+    width: 100%;
+    height: 100vh;
+    display: none; /* trocar para flex*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.884);
+    color: yellow;
+    font-size: 1.5rem;
+
+}
+
+button {
+    padding: 5px;
+    color: beige;
+    border: none;
+    background-color: green;
+    font-size: 1.3rem;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover{
+    background-color: rgb(255, 0, 0);
+    color: yellow;
+    transform: scale(1.1);
+    transition: .5s;
+}
