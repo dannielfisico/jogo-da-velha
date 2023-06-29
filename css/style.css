@@ -57,6 +57,8 @@ main {
     padding: 10px;
     color: rgb(78, 13, 78);;
     text-align: center;
+    user-select: none;
+
 
 }
 
@@ -72,6 +74,7 @@ main {
     background-color: rgba(0, 0, 0, 0.884);
     color: yellow;
     font-size: 1.5rem;
+    user-select: none;
 
 }
 
