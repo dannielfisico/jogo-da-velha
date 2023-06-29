@@ -13,6 +13,8 @@ header h1 {
     text-align: center;
     margin-top: 1em;
     color: #eee;
+    user-select: none;
+    
 }
 
 main {
@@ -44,6 +46,7 @@ main {
     height: 120px;
     background-color: rgb(78, 13, 78);
     color: rgb(255, 0, 0);
+    user-select: none;
     font-size: 80px;
     display: flex;
     justify-content: center;
