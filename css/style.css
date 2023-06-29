@@ -9,6 +9,12 @@ body {
     /* position: relative; */
 }
 
+header h1 {
+    text-align: center;
+    margin-top: 1em;
+    color: #eee;
+}
+
 main {
     width: 700px;
     height: 500px;
