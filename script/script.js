@@ -1,4 +1,4 @@
-//Iniviar variáveis globais do jogo
+//Iniciar variáveis globais do jogo
 const simbolos = ["X","O"]
 let jogadorAtual = 0
 const jogadasTabuleiro = ["","","","","","","","",""]
